@@ -1,0 +1,67 @@
+// Paths
+$imagePath: "/images";
+$fontPath: "/fonts";
+
+// Site Width
+$site-max-width: 1020px;
+$site-gutters: 30px;
+
+// Breakpoints
+$big-screen: 1020px;
+$medium-screen: 900px;
+$small-screen: 780px;
+$tiny-screen: 480px;
+
+// Margins & Padding
+$margin: 30px;
+$padding: 30px;
+
+// Colours
+
+// Brand
+$brand-primary: #2e358b;
+$brand-secondary: #6f72af;
+$brand-tertiary: #d53880;
+
+// Errors
+$highlight: #ffbf47;
+$error: #df3034;
+
+// Base Site
+$base-font-colour: #222;
+$body-background: #fff;
+$light-grey: #f8f8f8;
+$medium-grey: #c8c8c8;
+$dark-grey: #6f777b;
+$black: #0b0c0c;
+$link-colour: $brand-primary;
+$link-hover-colour: $brand-tertiary;
+
+// Buttons
+$button: $brand-primary;
+$button-inactive: scale-color($brand-primary, $lightness: 50%);
+$button-hover: $brand-tertiary;
+
+// Tables
+$table-borders: $medium-grey;
+
+// Borders
+$border-colour: $dark-grey;
+$border-radius: 0px;
+$border-size: 2px;
+$input-border: $dark-grey;
+$input-border-focus: $highlight;
+
+// Typography
+// Use system-font-family for iOS/ Android devices. Listed are: Apple iOS system font, iOS San Francisco, Apple San Francisco, Android, Windows Phone;
+$system-font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+$font-family-sans: $system-font-family-sans;
+$font-family-serif: "Georgia", Times, Serif;
+$base-sans: $font-family-sans;
+$base-font-size: 16px;
+$base-line-height: 1.4;
+$header-line-height: 1.2;
+$footer-font-size: 14px;
+$small-screen-font-size: 14px;
+$print-font-size: $small-screen-font-size;
