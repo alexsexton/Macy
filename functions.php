@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Setup the macy theme.
- *
- * @since 1.0
- */
+* Setup the macy theme.
+*
+* @since 1.0
+*/
 function macy_setup() {
 
 	// Remove crap from wp_head
@@ -22,20 +22,20 @@ function macy_setup() {
 
 	// Disable Emoji mess
 	function disable_wp_emojicons() {
-	    remove_action( 'admin_print_styles', 'print_emoji_styles' );
-	    remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-	    remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-	    remove_action( 'wp_print_styles', 'print_emoji_styles' );
-	    remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-	    remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
-	    remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
-	    add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
-	    add_filter( 'emoji_svg_url', '__return_false' );
+		remove_action( 'admin_print_styles', 'print_emoji_styles' );
+		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+		remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+		remove_action( 'wp_print_styles', 'print_emoji_styles' );
+		remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
+		remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+		remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+		add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
+		add_filter( 'emoji_svg_url', '__return_false' );
 	}
 	add_action( 'init', 'disable_wp_emojicons' );
 
 	function disable_emojicons_tinymce( $plugins ) {
-	    return is_array( $plugins ) ? array_diff( $plugins, array( 'wpemoji' ) ) : array();
+		return is_array( $plugins ) ? array_diff( $plugins, array( 'wpemoji' ) ) : array();
 	}
 
 	// Set the text domain
@@ -46,20 +46,27 @@ function macy_setup() {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'automatic-feed-links' );
 
-	// Load theme assets
+	// Theme assets
 	require_once 'lib/assets.php';
 
-	// Load custom menus
+	// Theme custom menus
 	require_once 'lib/menus.php';
 
+	register_nav_menus(
+		array(
+			'site_nav_main' => __( 'Main Navigation' ),
+			'site_nav_footer' => __( 'Footer Navigation' ),
+		)
+	);
+
 	// Set the content width
-	$GLOBALS['content_width'] = 768;
+	//$GLOBALS['content_width'] = 768;
 
 	/**
-	 * Fires after the theme setup.
-	 *
-	 * @since 1.0
-	 */
+	* Fires after the theme setup.
+	*
+	* @since 1.0
+	*/
 	do_action( 'macy_theme_setup' );
 
 }

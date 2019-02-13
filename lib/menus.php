@@ -36,7 +36,7 @@
   // element around the sub-nav. So happy I keep previous projects - thanks Josh
   // for spending 3 days working this out two years ago.
 
-  class Pentland_Nav_Walker extends Walker_Nav_Menu {
+  class Macy_Nav_Walker extends Walker_Nav_Menu {
     var $db_fields = array( 'parent' => 'menu_item_parent', 'id' => 'db_id' );
 
     function start_lvl( &$output, $depth = 0, $args = array() ) {
@@ -109,5 +109,3 @@
       $output .= "</li>\n";
     }
   }
-
-?>
