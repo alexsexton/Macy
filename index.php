@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<?php get_template_part('parts/header') ?>
+<?php get_template_part('partials/header') ?>
 
 <main class="main">
   <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
