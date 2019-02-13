@@ -59,8 +59,8 @@ function macy_setup() {
 		)
 	);
 
-	// Set the content width
-	//$GLOBALS['content_width'] = 768;
+	// Image functions
+	require_once 'lib/images.php';
 
 	/**
 	* Fires after the theme setup.
