@@ -2,9 +2,13 @@
 $imagePath: "/images";
 $fontPath: "/fonts";
 
+// Spacers
+$spacer: 1rem;
+
 // Site Width
-$site-max-width: 1020px;
-$site-gutters: 30px;
+$site-max-width: 1400px;
+$site-gutters: $spacer * 3;
+$small-site-gutters: $spacer * 1.5;
 
 // Breakpoints
 $big-screen: 1020px;
@@ -13,8 +17,19 @@ $small-screen: 780px;
 $tiny-screen: 480px;
 
 // Margins & Padding
-$margin: 30px;
-$padding: 30px;
+$margin: $spacer * 2;
+$padding: $spacer * 2;
+$small-padding: $spacer;
+
+// Colours
+
+// Social network colours
+$facebook: #365397;
+$twitter: #00a9f1;
+$youtube: #ff3333;
+$vimeo: #48b6ed;
+$pinterest: #ce1a19;
+$instagram: #cc2366;
 
 // Colours
 

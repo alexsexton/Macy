@@ -74,30 +74,32 @@
   @return #{($wanted / $parent) * 100 + '%'};
 }
 
-@mixin arrow-up ($size, $colour) {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: $size solid transparent;
-  border-right: $size solid transparent;;
-  border-bottom: $size solid $colour;
+@mixin image {
+  display: block;
+  width: 100%;
 }
 
-@mixin arrow-down ($size, $colour) {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: $size solid transparent;
-  border-right: $size solid transparent;;
-  border-top: $size solid $colour;
+@mixin focus {
+  outline: 2px solid $highlight;
+  background-color: transparent;
+}
+
+@mixin conceal {
+  display: none;
+  visibility: hidden;
+}
+
+@mixin disclose {
+  display: block;
+  visibility: visible;
 }
 
 @mixin hide {
-    position: absolute;
-    left: -9999em;
+  position: absolute;
+  left: -9999em;
 }
 
 @mixin show {
-    position: static;
-    left: inherit;
+  position: static;
+  left: inherit;
 }

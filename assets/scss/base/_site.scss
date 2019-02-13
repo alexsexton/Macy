@@ -1,24 +1,9 @@
 // Site
 
 html {
-  font-size: 62.5%; // Creates a baseline of 1em/rem = 10px;
-  background: $body-background;
+
 }
 
 body {
-  font-family: $base-sans;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  color: $base-font-colour;
-  padding: 0 $padding;
-}
 
-.row {
-  max-width: $site-max-width;
-  margin: auto;
-  padding: 0 15px;
-}
-
-.group {
-  @include group;
 }
