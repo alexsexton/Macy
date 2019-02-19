@@ -6,12 +6,12 @@
     <section>
 
       <header class="the-title">
-        <h1><?php the_title(); ?></h1>
-        <time datetime="<?php echo get_the_date('Y-m-d') ?>" pubdate="<?php echo get_the_date('Y-m-d') ?>"><?php echo get_the_date('j F Y') ?></time>
+        <h1>Page not found</h1>
       </header>
 
-      <article class="the-content rich-text">
-        <?php the_content(); ?>
+      <article class="the-content">
+        <p>If you entered a web address please check it was correct.</p>
+        <p>You can also <a href="/search">search</a> or <a href="/">browse from the homepage</a> to find the information you need.</p>
       </article>
 
     </section>
