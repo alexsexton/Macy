@@ -7,17 +7,18 @@
 @import "helpers/grid";
 
 @import "base/reset";
+@import "base/site";
 @import "base/typography";
 @import "base/forms";
-@import "base/nav";
 @import "base/header";
+@import "base/nav";
 @import "base/footer";
-@import "base/site";
 @import "base/sidebar";
 
 @import "components/images";
 @import "components/tabs";
 @import "components/tables";
+@import "components/blocks";
 
 @import "templates/example";
 
