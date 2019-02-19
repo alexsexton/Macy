@@ -13,6 +13,7 @@
     <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
       <?php get_template_part('partials/article-list-item'); ?>
     <?php endwhile; endif;?>
+    
   </section>
   <div class="pagination">
     <?php get_template_part('partials/pagination') ?>
