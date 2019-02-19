@@ -1,5 +1,4 @@
 <?php
-
 /**
 * Setup the macy theme.
 *

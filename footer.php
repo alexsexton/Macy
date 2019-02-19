@@ -5,7 +5,7 @@
       'theme_location' => 'site_nav_footer',
       'container' => 'ul',
       'container_id' => '',
-      'depth' => 2,
+      'depth' => 1,
       'walker' => new Macy_Nav_Walker(),
     ));
   ?>

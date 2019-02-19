@@ -15,9 +15,9 @@
 
     <form class="site-search" method="get" action="/">
       <fieldset class="form-group">
-            <label for="site-search">Search again...</label>
-            <input type="search" value="<?php echo get_search_query(); ?>" name="s" />
-            <button class="button" type="submit">Search</button>
+        <label for="site-search">Search again...</label>
+        <input type="search" value="<?php echo get_search_query(); ?>" name="s" />
+        <button class="button" type="submit">Search</button>
       </fieldset>
     </form>
 
