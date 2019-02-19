@@ -8,9 +8,9 @@
       <h1>Page not found</h1>
     </header>
 
-    <article class="the-content">
+    <article class="the-content rich-text">
       <p>If you entered a web address please check it was correct.</p>
-      <p>You can also <a href="/search">search</a> or <a href="/">browse from the homepage</a> to find the information you need.</p>
+      <p>You can also search or <a href="/">browse from the homepage</a> to find the information you need.</p>
     </article>
 
   </section>
