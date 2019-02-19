@@ -13,8 +13,8 @@
       <a class="button--back" href="javascript:window.history.go(-1);">Back</a>
     </header>
 
-    <form class="c-site-search" method="get" action="/">
-      <fieldset>
+    <form class="site-search" method="get" action="/">
+      <fieldset class="form-group">
             <label for="site-search">Search again...</label>
             <input id="site-search" type="search" placeholder="Search again..."  value="<?php echo get_search_query(); ?>" name="s" />
             <button class="button" type="submit">Search</button>
