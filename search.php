@@ -10,13 +10,13 @@
       $count = $GLOBALS['wp_query']->found_posts;
       echo sprintf(_n('<span class="count">%d</span> <strong>post</strong>', '<span class="count">%d</span> <strong>posts</strong>', $count), number_format_i18n($count));
       ?>.</p>
-      <a class="button--back" href="javascript:window.history.go(-1);">Back</a>
+      <a class="button button--back" href="javascript:window.history.go(-1);">Back</a>
     </header>
 
     <form class="site-search" method="get" action="/">
       <fieldset class="form-group">
             <label for="site-search">Search again...</label>
-            <input id="site-search" type="search" value="<?php echo get_search_query(); ?>" name="s" />
+            <input type="search" value="<?php echo get_search_query(); ?>" name="s" />
             <button class="button" type="submit">Search</button>
       </fieldset>
     </form>
