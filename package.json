@@ -1,6 +1,6 @@
 {
-  "name": "kitchen-sink",
-  "version": "1.0.2",
+  "name": "Macy",
+  "version": "1.0.1",
   "description": "",
   "dependencies": {
     "jquery": "^3.3.1"
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/alexsexton/kitchen-sink.git"
+    "url": "git://github.com/alexsexton/macy.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
