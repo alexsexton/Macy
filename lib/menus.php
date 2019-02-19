@@ -18,7 +18,7 @@
   // Replaces "has-sub-menu" with "u-has-sub"
   function sub_menus($text){
     $replace = array(
-      'has-submenu' => 'u-has-sub',
+      'has-submenu' => 'has-sub',
     );
     $text = str_replace(array_keys($replace), $replace, $text);
     return $text;
@@ -44,7 +44,7 @@
       $indent = str_repeat("\t", $depth);
 
       if($depth === 0) {
-        $output .= "<div class='o-nav__subnav'>\n";
+        $output .= "<div class='nav--subnav'>\n";
         $output .= "$indent<ul class='u-unstyled'>\n";
       } else {
         $output .= "<div class='menu-level'>\n";
@@ -91,7 +91,7 @@
         } else {
           $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
         }
-        $item_output .= '</a><a class="o-nav-subnav--handler" href="#" data-subnav-link="' . $item->ID . '"><span>Open</span></a>';
+        $item_output .= '</a><a class="subnav--handler" href="#" data-subnav-link="' . $item->ID . '"><span>Open</span></a>';
         $item_output .= $args->after;
       }
       else {
