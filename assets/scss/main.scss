@@ -20,15 +20,10 @@
 @import "components/tables";
 @import "components/blocks";
 
-@import "templates/example";
-
 @import "templates/home";
-@import "templates/pages";
-@import "templates/blog";
-
-// Shopify specific
-// @import "templatess/category";
-// @import "templatess/product-list";
-// @import "templatess/product-detail";
+@import "templates/page";
+@import "templates/archive";
+@import "templates/search";
+@import "templates/single";
 
 @import "base/ie";
