@@ -1,1 +1,3 @@
-<?php the_posts_pagination(); ?> 
+<div class="pagination">
+  <?php echo macy_pagination(); ?>
+</div>
