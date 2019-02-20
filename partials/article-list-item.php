@@ -10,10 +10,13 @@
     <?php endif; ?>
     <?php the_excerpt(); ?>
 
-    <a class="read-more" href="<?php the_permalink() ?>">Read more</a>
+    <a class="read-more" href="<?php the_permalink() ?>"><?php esc_html_e( 'Read more', 'macy' ); ?></a>
+
     <?php if (get_comments_number() != 0) : ?>
     <span> &mdash; </span>
-    <a href="<?php comments_link() ?>"><?php printf(_n('1 comment', '%1$s comments', get_comments_number(), 'macy'), number_format_i18n(get_comments_number())) ?></a>
+    <a href="<?php comments_link() ?>"><?php printf(_n('1 comment', '%1$s comments', get_comments_number(),
+    'macy'), number_format_i18n(get_comments_number())) ?></a>
+    
   <?php endif; ?>
 </div>
 </article>

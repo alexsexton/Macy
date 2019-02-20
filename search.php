@@ -15,7 +15,7 @@
 
     <form class="site-search" method="get" action="/">
       <fieldset class="form-group">
-        <label for="site-search"><?php esc_html_e( 'Search again...', 'macy' ); ?></label>
+        <label for="s"><?php esc_html_e( 'Search again...', 'macy' ); ?></label>
         <input type="search" value="<?php echo get_search_query(); ?>" name="s" />
         <button class="button" type="submit"><?php esc_html_e( 'Search', 'macy' ); ?></button>
       </fieldset>
