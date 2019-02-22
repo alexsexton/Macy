@@ -51,13 +51,11 @@ add_theme_support( 'custom-logo', array(
   'flex-height' => true,
   'flex-width'  => true,
   'header-text' => array( 'site-title', 'site-description' ),
-)
-);
+));
 
 // Simple function to remove the [...] from excerpt and replace with a 'Read more' link.
 function macy_excerpt_more($more) {
   global $post;
-  // edit here if you like
   return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'macy' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'Read more', 'macy' ) .'</a>';
 }
 
@@ -71,6 +69,7 @@ add_filter( 'excerpt_more', 'macy_excerpt_more' );
 // add_action( 'init', 'macy_unregister_tags' );
 
 // Rename 'posts' to 'news' - uncomment if needed
+
 // function macy_change_post_label() {
 //   global $menu;
 //   global $submenu;
