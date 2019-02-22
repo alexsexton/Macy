@@ -34,6 +34,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Me",
-  "license": "MIT"
+  "author": "Linea Digital",
+  "license": "GNU GPL v3"
 }
