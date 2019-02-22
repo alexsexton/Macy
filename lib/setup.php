@@ -31,6 +31,11 @@ function disable_emojicons_tinymce( $plugins ) {
   return is_array( $plugins ) ? array_diff( $plugins, array( 'wpemoji' ) ) : array();
 }
 
+// Apparently this is needed to pass theme check
+if ( ! isset( $content_width ) ) {
+  $content_width = '100%';
+}
+
 // Set the text domain
 load_theme_textdomain( 'macy', get_template_directory() . '/languages' );
 
@@ -41,15 +46,56 @@ add_theme_support( 'title-tag' );
 
 // Custom Logo
 add_theme_support( 'custom-logo', array(
-  'height'      => 200,
+  'height'      => 100,
   'width'       => 400,
   'flex-height' => true,
   'flex-width'  => true,
   'header-text' => array( 'site-title', 'site-description' ),
-  )
+)
 );
 
-// Apparently this is needed
-if ( ! isset( $content_width ) ) {
-  $content_width = '100%';
+// Simple function to remove the [...] from excerpt and replace with a 'Read more' link.
+function macy_excerpt_more($more) {
+  global $post;
+  // edit here if you like
+  return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'macy' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'Read more', 'macy' ) .'</a>';
 }
+
+add_filter( 'excerpt_more', 'macy_excerpt_more' );
+
+// Disable tags - uncomment if needed
+
+// function macy_unregister_tags() {
+//     unregister_taxonomy_for_object_type( 'post_tag', 'post' );
+// }
+// add_action( 'init', 'macy_unregister_tags' );
+
+// Rename 'posts' to 'news' - uncomment if needed
+// function macy_change_post_label() {
+//   global $menu;
+//   global $submenu;
+//   $menu[5][0] = 'News';
+//   $submenu['edit.php'][5][0]  = 'News';
+//   $submenu['edit.php'][10][0] = 'Add News';
+//   $submenu['edit.php'][16][0] = 'News Tags';
+//   echo '';
+// }
+// function macy_change_post_object() {
+//   global $wp_post_types;
+//   $labels =& $wp_post_types['post']->labels;
+//   $labels->name = 'News';
+//   $labels->singular_name = 'News';
+//   $labels->add_new = 'Add News';
+//   $labels->add_new_item = 'Add News';
+//   $labels->edit_item = 'Edit News';
+//   $labels->new_item = 'News';
+//   $labels->view_item = 'View News';
+//   $labels->search_items = 'Search News';
+//   $labels->not_found = 'No News found';
+//   $labels->not_found_in_trash = 'No News found in Trash';
+//   $labels->all_items = 'All News';
+//   $labels->menu_name = 'News';
+//   $labels->name_admin_bar = 'News';
+// }
+// add_action('admin_menu', 'macy_change_post_label');
+// add_action('init', 'macy_change_post_object');

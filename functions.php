@@ -14,6 +14,9 @@ function macy_setup() {
 	// Theme custom pagination
 	require_once 'lib/pagination.php';
 
+	// Theme sidebars
+	require_once 'lib/sidebars.php';
+
 	// Theme custom nav walker
 	require_once 'lib/menus.php';
 
