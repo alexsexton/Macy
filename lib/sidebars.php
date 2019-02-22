@@ -1,6 +1,6 @@
 <?php
 
-  // Sidebars and widget areas - dublicate and changes id / name if you need more
+  // Sidebars and widget areas
   function macy_register_sidebars() {
     register_sidebar( array(
       'id' => 'sidebar',
@@ -11,6 +11,7 @@
       'before_title' => '<h4>',
       'after_title' => '</h4>',
     ));
+    // Duplicate and change id / name if you need more
   }
 
    add_action( 'widgets_init', 'macy_register_sidebars' );
