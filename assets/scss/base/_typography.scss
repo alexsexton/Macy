@@ -55,6 +55,10 @@ a:hover {
   color: $link-hover-colour;
 }
 
+small {
+  font-size: $small-font-size;
+}
+
 // The content - Everything spat out by WordPress
 .rich-text {
   max-width: $measure;
