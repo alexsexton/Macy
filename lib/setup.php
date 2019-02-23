@@ -1,5 +1,9 @@
 <?php
 
+// Set production_env to true or false
+// If true query strings are stripped from JS and CSS asset files
+$production_env = false;
+
 // Remove crap from wp_head
 remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'rsd_link' );
@@ -36,6 +40,17 @@ if ( ! isset( $content_width ) ) {
   $content_width = '100%';
 }
 
+// remove wp version param from any enqueued scripts
+if ( $production_env == true ) {
+  function macy_remove_wp_ver_css_js( $src ) {
+      if ( strpos( $src, 'ver=' ) )
+          $src = remove_query_arg( 'ver', $src );
+      return $src;
+  }
+  add_filter( 'style_loader_src', 'macy_remove_wp_ver_css_js', 9999 );
+  add_filter( 'script_loader_src', 'macy_remove_wp_ver_css_js', 9999 );
+}
+
 // Set the text domain
 load_theme_textdomain( 'macy', get_template_directory() . '/languages' );
 
@@ -52,6 +67,12 @@ add_theme_support( 'custom-logo', array(
   'flex-width'  => true,
   'header-text' => array( 'site-title', 'site-description' ),
 ));
+
+// Remove the additional CSS section
+function macy_remove_css_section( $wp_customize ) {
+	$wp_customize->remove_section( 'custom_css' );
+}
+add_action( 'customize_register', 'macy_remove_css_section', 15 );
 
 // Simple function to remove the [...] from excerpt and replace with a 'Read more' link.
 function macy_excerpt_more($more) {
