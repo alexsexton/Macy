@@ -61,7 +61,7 @@ add_theme_support( 'title-tag' );
 
 // Custom Logo
 add_theme_support( 'custom-logo', array(
-  'height'      => 100,
+  'height'      => 200,
   'width'       => 400,
   'flex-height' => true,
   'flex-width'  => true,

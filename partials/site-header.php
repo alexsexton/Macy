@@ -1,8 +1,17 @@
-<header>
-  <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-  <p><?php echo get_bloginfo( 'description' ); ?></p>
+<header class="site-header">
 
-  <nav>
+  <?php if ( has_custom_logo() ) : ?>
+    <div class="site-logo">
+      <?php the_custom_logo(); ?>
+    </div>
+  <?php else : ?>
+  <div class="site-logo">
+    <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+    <p><?php echo get_bloginfo( 'description' ); ?></p>
+  </div>
+  <?php endif; ?>
+
+  <nav id="main-nav" class="main-nav">
     <?php
     wp_nav_menu ( array (
       'theme_location' => 'site_nav_main',
@@ -14,6 +23,8 @@
     ?>
   </nav>
 
+  <a href="#main-nav"><?php esc_html_e( 'Menu', 'macy' ); ?></a>
+
   <form class="site-search" method="get" action="/">
     <fieldset class="form-group">
       <label for="s"><?php esc_html_e( 'What are you looking for?', 'macy' ); ?></label>
@@ -21,7 +32,5 @@
       <button class="button" type="submit"><?php esc_html_e( 'Search', 'macy' ); ?></button>
     </fieldset>
   </form>
-
-
 
 </header>
