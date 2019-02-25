@@ -17,10 +17,8 @@
   </section>
 
   <?php get_template_part('partials/sidebar'); ?>
-  
-  <div class="pagination">
-    <?php get_template_part('partials/pagination') ?>
-  </div>
+
+  <?php get_template_part('partials/pagination') ?>
 </main>
 
 <?php get_footer() ?>
