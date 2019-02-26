@@ -13,6 +13,9 @@
 
     wp_enqueue_style('main-styles', get_template_directory_uri() . '/static/main.css', array(), $cache_buster );
 
+    // Add typekit fonts
+    wp_enqueue_style('type-kit', 'https://use.typekit.net/xsc5qhf.css', array() );
+
     wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/static/lib/modernizr.min.js', array(), false, false  );
 
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/static/lib/jquery-3.3.1.min.js', array(), false, true  );

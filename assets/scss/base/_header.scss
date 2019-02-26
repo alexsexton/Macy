@@ -1,6 +1,17 @@
 // Header
 
-.header {
+.site-header {
+  padding: $spacer * 1 0 $spacer * 2;
 
+  .site-logo {
+    width: 300px;
+  }
+
+  .site-nav-trigger {
+    position: fixed;
+    top: $spacer * 4;
+    left: $spacer * 4;
+    z-index: 3;
+  }
 
 }

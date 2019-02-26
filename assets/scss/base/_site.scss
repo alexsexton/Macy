@@ -7,3 +7,46 @@ html {
 body {
 
 }
+
+.hide {
+  @include hide;
+}
+
+.page-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  float: left;
+  background-color: $kitten-orange;
+  background-image: url('#{$imagePath}/home-page-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-origin: content-box;
+
+
+  .es, .en, .fr {
+    position: absolute;
+    z-index: 2;
+    color: $white;
+    font-size: $base-font-size * 4;
+    font-weight: bold;
+  }
+
+  .es {
+    top: 33%;
+    left: 30%;
+  }
+
+  .en {
+    top: 50%;
+    left: 40%;
+  }
+
+  .fr {
+    top: 66%;
+    left: 20%;
+  }
+}

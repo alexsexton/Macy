@@ -1,6 +1,6 @@
 // Paths
-$imagePath: "/images";
-$fontPath: "/fonts";
+$imagePath: "images";
+$fontPath: "fonts";
 
 // Spacers
 $spacer: 1rem;
@@ -21,7 +21,13 @@ $margin: $spacer * 2;
 $padding: $spacer * 2;
 $small-padding: $spacer;
 
-// Colours - from tachyons palette
+// Timings
+$trans-time: 0.3s;
+
+// Colours
+
+// Custom Colours
+$kitten-orange: #C25225;
 
 // Brand
 $brand-primary: $blue;

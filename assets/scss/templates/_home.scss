@@ -1,0 +1,13 @@
+.page-template {
+}
+
+.wrapper {
+  width: 50%;
+  height: 100%;
+  float: right;
+  padding: 0 $spacer * 2;
+}
+
+.page-image {
+  background-image: url('#{$imagePath}/home-page-background.jpg');
+}
