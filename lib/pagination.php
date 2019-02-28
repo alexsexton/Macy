@@ -9,14 +9,15 @@
 * - from https://gist.github.com/mtx-z/f95af6cc6fb562eb1a1540ca715ed928
 *
 * USAGE:
-*     <?php echo pentland_pagination(); ?> //uses global $wp_query
+*     <?php echo macy_pagination(); ?> //uses global $wp_query
 * or with custom WP_Query():
 *     <?php
 *      $query = new \WP_Query($args);
 *       ... while(have_posts()), $query->posts stuff ...
-*       echo pentland_pagination($query);
+*       echo macy_pagination($query);
 *     ?>
 */
+
 function macy_pagination( \WP_Query $wp_query = null, $echo = true ) {
 
   if ( null === $wp_query ) {
@@ -31,7 +32,7 @@ function macy_pagination( \WP_Query $wp_query = null, $echo = true ) {
     'type'         => 'array',
     'show_all'     => false,
     'end_size'     => 1,
-    'mid_size'     => 0,
+    'mid_size'     => 2,
     'prev_next'    => true,
     'prev_text'    => sprintf( '<i class="icon--prev"></i><span>%1$s</span>', __( 'Newer' ) ),
     'next_text'    => sprintf( '<i class="icon--next"></i><span>%1$s</span>', __( 'Older') ),
@@ -42,11 +43,11 @@ function macy_pagination( \WP_Query $wp_query = null, $echo = true ) {
 
 if ( is_array( $pages ) ) {
 
-  $pagination = '<nav class="pagination-nav"><ul>';
+  $pagination = '<nav class="pagination-links"><ul>';
 
   $count = 1;
   foreach ( $pages as $page ) {
-    $pagination .= '<li class="page-item u-item-'.$count.'"> ' . str_replace( 'page-numbers', 'page-link', $page ) . '</li>';
+    $pagination .= '<li class="page-item p-item-'.$count.'"> ' . str_replace( 'page-numbers', 'page-link', $page ) . '</li>';
     $count++;
   }
 

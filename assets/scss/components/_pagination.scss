@@ -1,0 +1,53 @@
+.pagination-links {
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    padding: $spacer 0;
+  }
+
+  .page-item {}
+
+  li {
+
+  }
+
+  .page-link {
+    padding: 0 $spacer;
+    height: 36px;
+    line-height: 36px;
+    display: block;
+  }
+
+  a {}
+
+  .span {}
+
+  .dots {
+      position: relative;
+
+      &:after {
+        content: "";
+        background: $white linear-gradient(0deg, $white 48%, $black 48%, $black 51%, $white 51%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 36px;
+        width: 100%;
+        display: block;
+        z-index: 1;
+      }
+    }
+
+  .current {}
+
+  .prev {}
+
+  .next {}
+
+  .icon--prev {}
+
+  .icon--next {}
+
+}
