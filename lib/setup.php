@@ -82,6 +82,13 @@ function macy_excerpt_more($more) {
 
 add_filter( 'excerpt_more', 'macy_excerpt_more' );
 
+// Custom excerpt length
+function macy_custom_excerpt_length( $length ) {
+	return 21;
+}
+add_filter( 'excerpt_length', 'macy_custom_excerpt_length', 999 );
+
+
 // Disable tags - uncomment if needed
 
 // function macy_unregister_tags() {
