@@ -14,6 +14,12 @@ function macy_setup() {
 	// Theme custom pagination
 	require_once 'lib/pagination.php';
 
+	// Theme custom post types
+	require_once 'lib/post-types.php';
+
+	// Theme custom fields (ACF)
+	require_once 'lib/custom-fields.php';
+
 	// Theme sidebars
 	require_once 'lib/sidebars.php';
 
