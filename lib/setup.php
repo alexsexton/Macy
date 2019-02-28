@@ -77,7 +77,7 @@ add_action( 'customize_register', 'macy_remove_css_section', 15 );
 // Simple function to remove the [...] from excerpt and replace with a 'Read more' link.
 function macy_excerpt_more($more) {
   global $post;
-  return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'macy' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'Read more', 'macy' ) .'</a>';
+  return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'macy' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'read more', 'macy' ) .'</a>';
 }
 
 add_filter( 'excerpt_more', 'macy_excerpt_more' );
