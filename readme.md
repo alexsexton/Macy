@@ -14,7 +14,7 @@ Node, Gulp CLI and a virtual machine running WordPress (for local dev ovs).
 
 Need to buy ACF Pro for the following functionality:
 
-- [ ] The image in the left of the page should be editable by the customer
+- [ ] The image on the left of the page should be editable by the customer
 - [ ] The text on the left of the page should be editable by the customer these are the Spanish, English and French heading translations
 - [ ] Adding site wide OG and Twitter images
 - [ ] Adding site wide meta content
