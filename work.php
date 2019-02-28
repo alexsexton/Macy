@@ -5,8 +5,8 @@
 <?php get_template_part('partials/site-header') ?>
 
 <?php $args = array(
-  'posts_per_page' => -1,
-  'post_type' => 'articles',
+  'posts_per_page' => 3,
+  'post_type' => 'post',
   'order'   => 'ASC',
   'orderby' => 'date',
 );
@@ -32,7 +32,10 @@ $work = new WP_Query($args); ?>
 
   </section>
 
-  <?php get_template_part('partials/pagination') ?>
+  <div class="pagination">
+    <?php echo macy_pagination($work); ?>
+  </div>
+  
 </main>
 
 <?php get_footer() ?>
