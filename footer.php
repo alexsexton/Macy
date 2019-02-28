@@ -16,7 +16,7 @@
 
 </div> <?php // end wrapper ?>
 
-<div class="page-image">
+<div class="cover-image">
   <span class="es" aria-hidden>¡Hola!</span>
   <span class="en" aria-hidden>Hello!</span>
   <span class="fr" aria-hidden>Bonjour!</span>
