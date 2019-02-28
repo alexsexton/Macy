@@ -28,7 +28,7 @@ function macy_register_post_types_articles() {
     'label' => $plural,
     'description' =>  $plural,
     'labels' => $labels,
-    'supports' => array( 'title', 'excerpt', 'thumbnail', 'editor', 'custom-fields', 'page-attributes' ),
+    'supports' => array( 'title', 'excerpt', 'thumbnail', 'editor' ),
     'hierarchical' => true,
     'public' => true,
     'show_ui' => true,
