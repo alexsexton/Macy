@@ -18,6 +18,7 @@ Need to buy ACF Pro for the following functionality:
 - [ ] The text on the left of the page should be editable by the customer these are the Spanish, English and French heading translations
 - [ ] Adding site wide OG and Twitter images
 - [ ] Adding site wide meta content
+- [ ] Add link to external article for portfolio items
 
 ## To do or to be discussed
 
