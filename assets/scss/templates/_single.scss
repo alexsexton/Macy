@@ -1,0 +1,10 @@
+.single-articles {
+
+  .cover-image {
+    background-image: url('#{$imagePath}/portfolio-page-background.jpg');
+  }
+
+  .the-title h1 {
+    @include title;
+  }
+}
