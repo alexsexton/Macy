@@ -6,7 +6,7 @@
 
 <?php $args = array(
   'posts_per_page' => 3,
-  'post_type' => 'post',
+  'post_type' => 'articles',
   'order'   => 'ASC',
   'orderby' => 'date',
 );
@@ -35,7 +35,7 @@ $work = new WP_Query($args); ?>
   <div class="pagination">
     <?php echo macy_pagination($work); ?>
   </div>
-  
+
 </main>
 
 <?php get_footer() ?>
