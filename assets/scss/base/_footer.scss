@@ -1,5 +1,17 @@
 // footer
 
-.footer {
+.site-footer {
+  position: relative;
+  margin-top: $spacer * 2;
+  padding: $spacer * 2 0;
 
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 61.8%;
+    background: $black;
+  }
 }
