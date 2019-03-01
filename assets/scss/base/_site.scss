@@ -1,12 +1,10 @@
 // Site
 
 html {
-
+  background: $white;
 }
 
-body {
-
-}
+body {}
 
 .hide {
   @include hide;
@@ -19,6 +17,21 @@ body {
   padding: 0 $spacer * 2;
   @media screen and (max-width: $small-screen) {
     width: 75%;
+  }
+}
+
+.main {
+  position: relative;
+  padding-top: $spacer * 2;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 31.2%;
+    background: $black;
   }
 }
 
@@ -39,12 +52,11 @@ body {
     width: 25%;
   }
 
-
   .es, .en, .fr {
     position: absolute;
     z-index: 2;
     color: $white;
-    font-size: $base-font-size * 4;
+    font-size: $base-font-size * 3;
     font-weight: bold;
   }
 
