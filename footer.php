@@ -17,9 +17,11 @@
 </div> <?php // end wrapper ?>
 
 <div class="cover-image">
+  <?php if (is_front_page()) : ?>
   <span class="es" aria-hidden>¡Hola!</span>
   <span class="en" aria-hidden>Hello!</span>
   <span class="fr" aria-hidden>Bonjour!</span>
+  <?php endif; ?>
 </div>
 
 <?php wp_footer(); ?>
