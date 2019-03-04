@@ -18,7 +18,7 @@ function macy_setup() {
 	require_once 'lib/post-types.php';
 
 	// Theme custom fields (ACF)
-	require_once 'lib/custom-fields.php';
+	require_once 'app/portfolio-acf.php';
 
 	// Theme sidebars
 	require_once 'lib/sidebars.php';
