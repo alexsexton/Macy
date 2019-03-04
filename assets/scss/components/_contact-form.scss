@@ -8,6 +8,8 @@ span.wpcf7-not-valid-tip {
 
 .wpcf7-not-valid {
   border-color: $highlight !important;
+  // border: 0;
+  // box-shadow: 0 0 4px $highlight !important;
 }
 
 div.wpcf7-response-output {
@@ -24,8 +26,5 @@ div.wpcf7-validation-errors {
 }
 
 div.wpcf7 .ajax-loader {
-  // background-image: url('#{$imagePath}/ajax-loader.gif');
-  // width: 16px;
-  // height: 16px;
   display: none !important;
 }

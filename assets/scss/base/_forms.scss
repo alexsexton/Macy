@@ -8,7 +8,8 @@ input[type=tel],
 textarea {
   appearance: none;
   border-radius: 0;
-  border: $border-size solid $border-colour;
+  border: $border-size solid transparentize($border-colour, 0.75);
+  // border: 0;
   font-size: $base-font-size;
   padding: 8px;
   margin: 0;
@@ -17,6 +18,11 @@ textarea {
   width: 100%;
   font-family: $font-family-sans;
   font-size: $base-font-size;
+  // box-shadow: 0 0 8px rgba($border-colour, 50%);
+
+  &:focus {
+    box-shadow: 0 0 1rem transparentize($border-colour, 0.75);
+  }
 }
 
 textarea {
