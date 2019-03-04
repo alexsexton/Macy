@@ -6,10 +6,11 @@
       <div class="site-logo">
         <?php the_custom_logo(); ?>
       </div>
+      <p class="site-desc"><?php echo get_bloginfo( 'description' ); ?></p>
     <?php else : ?>
       <div class="site-logo">
         <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-        <p><?php echo get_bloginfo( 'description' ); ?></p>
+        <p class="site-desc"><?php echo get_bloginfo( 'description' ); ?></p>
       </div>
     <?php endif; ?>
 
