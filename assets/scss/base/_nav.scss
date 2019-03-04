@@ -9,7 +9,7 @@ $sub-nav-link-hover: $white;
 .site-nav-trigger {
   position: fixed;
   top: $spacer * 4;
-  left: $spacer * 4;
+  left: $spacer * 3;
   z-index: 10;
   @media screen and (max-width: $small-screen) {
     position: fixed;
@@ -42,6 +42,7 @@ $sub-nav-link-hover: $white;
     width: $c-100w;
   }
 }
+
 .site-nav-is-open {
 
   .main-nav {
@@ -65,8 +66,8 @@ $sub-nav-link-hover: $white;
 .site-nav {
   transition: opacity $trans-time;
   position: relative;
-  top: $spacer * 10;
-  left: $spacer * 4;
+  top: $spacer * 9;
+  left: $spacer * 3;
   opacity: 0;
   display: flex;
   justify-content: space-around;
@@ -86,11 +87,11 @@ $sub-nav-link-hover: $white;
   }
   a {
     transition: color $trans-time;
-    font-size: $base-font-size * 3;
+    font-size: $base-font-size * 2.5;
     color: $nav-link;
     font-weight: bold;
     @media screen and (max-width: $small-screen) {
-      font-size: $base-font-size * 1.5;
+      font-size: $base-font-size * 2;
     }
     &:hover {
       color: rgba($nav-link-hover,0.5);

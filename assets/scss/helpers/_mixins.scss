@@ -65,12 +65,12 @@
     position: fixed;
     z-index: 1;
     color: $white;
-    font-size: $base-font-size * 3;
+    font-size: $base-font-size * 2.5;
     font-weight: bold;
-    top: $spacer * 10;
-    left: $spacer * 4;
+    top: $spacer * 9;
+    left: $spacer * 3;
     line-height: $heading-line-height;
-    width: calc(32.2% - 64px);
+    width: calc(38.2% - 6rem);
   }
 }
 
