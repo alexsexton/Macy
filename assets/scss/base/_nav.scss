@@ -6,29 +6,60 @@ $nav-link-active: $white;
 $sub-nav-link: $white;
 $sub-nav-link-hover: $white;
 
+.site-nav-trigger {
+  position: fixed;
+  top: $spacer * 4;
+  left: $spacer * 4;
+  z-index: 10;
+  @media screen and (max-width: $small-screen) {
+    position: fixed;
+    top: $spacer * 3;
+    right: $spacer * 2;
+    left: auto;
+    color: $white;
+    z-index: 10;
+    padding: 0;
+    background: $dusty-blue;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    line-height: 1;
+  }
+}
+
 .main-nav {
   position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
   height: 100%;
-  width: 50%;
+  width: $c-cover;
   background: $kitten-orange;
   transform: translateX(-100%);
   transition: transform $trans-time;
   transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  @media screen and (max-width: $small-screen) {
+    width: $c-100w;
+  }
 }
-
-.site-nav-is-open .main-nav, {
-  transform: translateX(0);
-  transition: transform $trans-time;
-  transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
-}
-
 .site-nav-is-open {
+
+  .main-nav {
+    transform: translateX(0);
+    transition: transform $trans-time;
+    transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  }
+
   .site-nav {
     opacity: 1;
   }
+
+  .site-nav-trigger {
+    @media screen and (max-width: $small-screen) {
+      background: $kitten-orange;
+    }
+  }
+
 }
 
 .site-nav {
@@ -44,7 +75,8 @@ $sub-nav-link-hover: $white;
   @media screen and (max-width: $small-screen) {
     justify-content: flex-start;
     margin: 0 $small-site-gutters;
-    top: $spacer * 4;
+    left: $spacer * 2;
+    top: $spacer * 8;
   }
 
   @media screen and (max-width: $small-screen) {
@@ -58,7 +90,7 @@ $sub-nav-link-hover: $white;
     color: $nav-link;
     font-weight: bold;
     @media screen and (max-width: $small-screen) {
-      font-size: $base-font-size * 1.25;
+      font-size: $base-font-size * 1.5;
     }
     &:hover {
       color: rgba($nav-link-hover,0.5);

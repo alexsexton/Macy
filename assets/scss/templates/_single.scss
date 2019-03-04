@@ -7,4 +7,8 @@
   .the-title h1 {
     @include title;
   }
+
+  .the-content {
+    margin-bottom: $spacer * 3;
+  }
 }

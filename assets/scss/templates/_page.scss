@@ -1,4 +1,5 @@
-.page-template-default {
+.page-template, .page-template-default {
+  position: relative;
 
   .cover-image {
     background-image: url('#{$imagePath}/page-background.jpg');
@@ -9,10 +10,16 @@
   }
 }
 
-.page-template-work {
-  position: relative;
+.page-template-page-work {
 
   .cover-image {
     background-image: url('#{$imagePath}/portfolio-page-background.jpg');
+  }
+}
+
+.page-template-page-contact {
+
+  .cover-image {
+    background-image: url('#{$imagePath}/contact-page-background.jpg');
   }
 }

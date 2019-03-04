@@ -3,7 +3,7 @@
 .hamburger {
   display: inline-block;
   cursor: pointer;
-  transition-property: opacity, filter;
+  transition-property: background, opacity, filter;
   transition-duration: 0.15s;
   transition-timing-function: linear;
   font: inherit;

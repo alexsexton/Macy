@@ -1,17 +1,5 @@
 // Media Queries
 
-@mixin title {
-  position: fixed;
-  z-index: 1;
-  color: $white;
-  font-size: $base-font-size * 3;
-  font-weight: bold;
-  top: $spacer * 10;
-  left: $spacer * 4;
-  line-height: $heading-line-height;
-  width: calc(50% - 64px);
-}
-
 @mixin tiny-screen-max {
   @media screen and (max-width: $tiny-screen) {
     @content;
@@ -69,6 +57,20 @@
   }
   &:after {
     clear: both;
+  }
+}
+
+@mixin title {
+  @media screen and (min-width: $small-screen) {
+    position: fixed;
+    z-index: 1;
+    color: $white;
+    font-size: $base-font-size * 3;
+    font-weight: bold;
+    top: $spacer * 10;
+    left: $spacer * 4;
+    line-height: $heading-line-height;
+    width: calc(32.2% - 64px);
   }
 }
 

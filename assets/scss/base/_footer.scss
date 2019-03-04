@@ -2,16 +2,35 @@
 
 .site-footer {
   position: relative;
-  margin-top: $spacer * 2;
+  margin-top: $spacer * 3;
   padding: $spacer * 2 0;
+  font-size: $small-font-size;
 
   &:before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    height: 4px;
+    height: 3px;
     width: 61.8%;
-    background: $black;
+    background: $dusty-blue;
+  }
+
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: $small-screen) {
+      flex-direction: column;
+    }
+
+    li {
+      padding-right: $spacer;
+    }
+  }
+
+  small {
+    display: block;
+    margin-top: $spacer * 2;
   }
 }

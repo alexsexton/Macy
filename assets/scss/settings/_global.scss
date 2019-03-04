@@ -10,6 +10,14 @@ $site-max-width: 1400px;
 $site-gutters: $spacer * 3;
 $small-site-gutters: $spacer * 1.5;
 
+// Containers
+$c-main: 61.8%;
+$c-cover: 38.2%;
+$c-25w: 25%;
+$c-50w: 50%;
+$c-75w: 75%;
+$c-100w: 100%;
+
 // Breakpoints
 $big-screen: 1020px;
 $medium-screen: 900px;
@@ -28,15 +36,18 @@ $trans-time: 0.3s;
 
 // Custom Colours
 $kitten-orange: #C25225;
+$dusty-yellow: #FFCB3F;
+$dusty-blue: #2F5567;
+$deep-sea: #242930;
 
 // Brand
-$brand-primary: $blue;
-$brand-secondary: $orange;
-$brand-tertiary: $pink;
+$brand-primary: $kitten-orange;
+$brand-secondary: $dusty-blue;
+$brand-tertiary: $dusty-yellow;
 
 // Errors
-$highlight: $yellow;
-$error: $red;
+$highlight: $dusty-yellow;
+$error: $kitten-orange;
 
 // Base Site
 $base-font-colour: #222;
@@ -45,13 +56,13 @@ $light-grey: #f8f8f8;
 $medium-grey: #c8c8c8;
 $dark-grey: #6f777b;
 $black: #0b0c0c;
-$link-colour: $brand-primary;
-$link-hover-colour: $brand-tertiary;
+$link-colour: $brand-secondary;
+$link-hover-colour: $base-font-colour;
 
 // Buttons
-$button: $brand-primary;
-$button-inactive: scale-color($brand-primary, $lightness: 50%);
-$button-hover: $brand-tertiary;
+$button: $brand-secondary;
+$button-inactive: scale-color($button, $lightness: 25%);
+$button-hover: $brand-primary;
 
 // Tables
 $table-borders: $medium-grey;

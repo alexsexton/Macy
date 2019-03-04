@@ -5,13 +5,9 @@
 
   .site-logo {
     width: 300px;
-  }
-
-  .site-nav-trigger {
-    position: fixed;
-    top: $spacer * 4;
-    left: $spacer * 4;
-    z-index: 10;
+    @media screen and (max-width: $small-screen) {
+      width: 200px;
+    }
   }
 
 }
