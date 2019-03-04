@@ -1,0 +1,31 @@
+// Contact form 7 styles
+
+span.wpcf7-not-valid-tip {
+  font-style: italic;
+  color: $base-font-colour;
+  font-size: $small-font-size;
+}
+
+.wpcf7-not-valid {
+  border-color: $highlight !important;
+}
+
+div.wpcf7-response-output {
+  padding: $spacer;
+  margin: 0 !important;
+  border: none;
+}
+
+div.wpcf7-validation-errors {
+  border: none;
+  background: $highlight;
+  color: $black;
+  margin: none !important;
+}
+
+div.wpcf7 .ajax-loader {
+  // background-image: url('#{$imagePath}/ajax-loader.gif');
+  // width: 16px;
+  // height: 16px;
+  display: none !important;
+}
