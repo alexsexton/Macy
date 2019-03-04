@@ -19,7 +19,12 @@
 
 .page-template-page-contact {
 
+  .main-nav {
+    background-color: $dusty-blue;
+  }
+
   .cover-image {
+    background-color: $dusty-blue;
     background-image: url('#{$imagePath}/contact-page-background.jpg');
   }
 }
