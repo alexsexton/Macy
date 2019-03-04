@@ -11,14 +11,15 @@
   }
 
   .site-desc {
-    position: fixed;
-    bottom: $spacer * 3;
-    left: $spacer * 4;
-    color: $white;
-    z-index: 5;
-    font-size: $small-font-size;
-    @media screen and (max-width: $small-screen) {
-      @include hide;
-    }
+    // position: fixed;
+    // bottom: $spacer * 3;
+    // left: $spacer * 3;
+    // color: $white;
+    // z-index: 5;
+    // font-size: $small-font-size;
+    // @media screen and (max-width: $small-screen) {
+    //   @include hide;
+    // }
+    @include hide;
   }
 }
