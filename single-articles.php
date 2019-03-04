@@ -13,9 +13,12 @@
         <?php the_content(); ?>
       </article>
 
-    <div class="off-site-link">
-      <p><a href="#">&mdash; Read the full article</a></p>
-    </div>
+      <?php $orginal_url = get_field('article_link'); ?>
+      <?php if ($orginal_url) : ?>
+        <div class="off-site-link">
+          <p><a href="<?php echo esc_url($orginal_url); ?>">&mdash; Read the full article</a></p>
+        </div>
+      <?php endif; ?>
 
     <?php if (has_post_thumbnail()) : ?>
       <div class="post-image">
