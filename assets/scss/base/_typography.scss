@@ -48,6 +48,20 @@ a:hover {
   max-width: $measure;
   font-size: $base-font-size;
 
+  p {
+    margin: 0 0 $spacer;
+
+    a {
+      text-decoration: underline;
+      text-decoration-skip: edges;
+      text-decoration-color: $link-colour;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
   ul {
     margin: 0 0 $spacer $spacer * 1.1;
     li {
@@ -76,10 +90,9 @@ a:hover {
 
   blockquote {
     padding: 0 0 0 $spacer;
-    margin: 0 0 $spacer 0;
+    margin: 0 0 $spacer $margin;
     max-width: $measure;
-    border-left: 5px solid $brand-secondary;
-    font-family: $font-family-serif;
+    border-left: 3px solid $brand-secondary;
 
     cite:before {
       content: "\2014\00a0";
@@ -102,6 +115,10 @@ a:hover {
     font-style: italic;
   }
 
+  u {
+    text-decoration-skip: edges;
+  }
+
   small {
     font-size: $small-font-size;
   }
@@ -110,6 +127,7 @@ a:hover {
     border: none;
     height: 3px;
     background: $brand-secondary;
+    margin: $spacer * 2 0;
   }
 
   // Links

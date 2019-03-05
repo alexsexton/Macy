@@ -19,6 +19,9 @@ body {}
     width: $c-100w;
     float: none;
   }
+  @media screen and (max-width: $tiny-screen) {
+    padding: 0 $spacer;
+  }
 }
 
 .main {

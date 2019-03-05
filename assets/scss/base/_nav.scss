@@ -25,6 +25,9 @@ $sub-nav-link-hover: $white;
     width: 64px;
     line-height: 1;
   }
+  @media screen and (max-width: $tiny-screen) {
+    right: $spacer;
+  }
 }
 
 .main-nav {
@@ -75,7 +78,6 @@ $sub-nav-link-hover: $white;
   line-height: $heading-line-height;
   @media screen and (max-width: $small-screen) {
     justify-content: flex-start;
-    margin: 0 $small-site-gutters;
     left: $spacer * 2;
     top: $spacer * 8;
   }

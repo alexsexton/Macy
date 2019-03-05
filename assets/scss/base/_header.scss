@@ -5,7 +5,7 @@
 
   .site-logo {
     width: 300px;
-    @media screen and (max-width: $small-screen) {
+    @media screen and (max-width: $tiny-screen) {
       width: 200px;
     }
   }
