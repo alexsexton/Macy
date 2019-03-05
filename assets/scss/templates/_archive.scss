@@ -1,0 +1,15 @@
+.the-category {
+  @include title;
+  h1 {
+    font-size: $base-font-size * 2.5;
+  }
+  p {
+    font-size: $base-font-size;
+  }
+  @media screen and (max-width: $small-screen) {
+    padding-bottom: $spacer * 3;
+    h1 {
+      font-size: $base-font-size * 1.5;
+    }
+  }
+}
