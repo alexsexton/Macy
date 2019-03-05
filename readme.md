@@ -1,25 +1,30 @@
 # Macy. A WordPress Theme
 
-WordPress theme for `http://thecontentcat.com` or the lovely cat. Based on my 'bare bear' bare theme. This is in active development which is why it's not finished and looks a bit shit.
+WordPress theme for `http://thecontentcat.com` a.k.a the lovely cat. Based on my 'bare bear' bare theme.
+
+## Features
+
+- Custom logo
+- Custom favicon
+- Responsive layout (based on two a column golden ratio grid)
+- Responsive navigation with animated toggle button
+- Typography from Adobe Type, 'Brandon Grotesque' for body text and headings
 
 ## Installation
 
-Clone or download and run `npm install`. To build the assets once run `gulp` or to watch them run `gulp watch`.
+Clone or download and run `npm install`.
+To build the assets once run `gulp` or to watch them run `gulp watch`.
 
 ## Prerequisites
 
 Node, Gulp CLI and a virtual machine running WordPress (for local dev ovs).
 
-## Build notes
+## Notes
 
-Need to buy ACF Pro for the following functionality:
+There is one custom post type 'articles' which is the post type for portfolio content.
 
-- [ ] The image on the left of the page should be editable by the customer
-- [ ] The text on the left of the page should be editable by the customer these are the Spanish, English and French heading translations
-- [ ] Adding site wide OG and Twitter images
-- [ ] Adding site wide meta content
-- [ ] Add link to external article for portfolio items
+There are two custom page templates: `page-contact.php` and `page-work.php`.
 
-## To do or to be discussed
+Contact (`page-contact.php`) is for the contact page, only difference between this and the default page is the background image and colour.
 
-Use posts or create a custom post type for the portfolio page, this depends if she's gonna blog again. I'm edging towards a custom post type here.
+Work (`page-work.php`) is for the portfolio page and pulls in posts from the 'articles' custom post type.
