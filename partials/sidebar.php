@@ -1,10 +1,12 @@
 <aside class="sidebar" role="complementary">
   <div class="categories">
     <h3>Categories</h3>
-    <?php wp_list_categories( array(
-      'orderby' => 'name',
-      'title_li' => '',
-    )); ?>
+    <ul>
+      <?php wp_list_categories( array(
+        'orderby' => 'name',
+        'title_li' => '',
+      )); ?>
+    </ul>
   </div>
 
   <?php if (get_the_tags()) : ?>
@@ -13,5 +15,5 @@
       <p><?php the_tags('',', ','') ?></p>
     </div>
   <?php endif ?>
-  
+
 </aside>
