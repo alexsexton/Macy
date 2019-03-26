@@ -19,9 +19,13 @@ function macy_setup() {
 
 	// Theme custom fields (ACF)
 	require_once 'app/portfolio-acf.php';
+	require_once 'app/page-acf.php';
 
 	// Theme sidebars
 	require_once 'lib/sidebars.php';
+
+	// Theme shortcodes
+	require_once 'lib/shortcodes.php';
 
 	// Theme custom nav walker
 	require_once 'lib/menus.php';
