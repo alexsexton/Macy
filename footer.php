@@ -10,19 +10,18 @@
       ));
     ?>
 
-    <small>&copy; Copyright <?php echo(date(Y)); ?></small>
+    <small>&copy; Copyright <?php echo(date('Y')); ?></small>
 
   </footer>
 
 </div> <?php // end wrapper ?>
 
-<div class="cover-image">
-  <!-- <?php if (is_front_page()) : ?>
-  <span class="es" aria-hidden>¡Hola!</span>
-  <span class="en" aria-hidden>Hello!</span>
-  <span class="fr" aria-hidden>Bonjour!</span>
-  <?php endif; ?> -->
-</div>
+<?php $cover_image = get_field('page_background_image'); ?>
+<?php if ($cover_image['url']) : ?>
+  <div class="cover-image" style="background-image:url('<?php echo esc_url( $cover_image['url']); ?>');"></div>
+<?php else : ?>
+  <div class="cover-image"></div>
+<?php endif; ?>
 
 <?php wp_footer(); ?>
 

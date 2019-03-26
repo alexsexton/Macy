@@ -25,20 +25,13 @@
         'walker' => new Macy_Nav_Walker(),
       ));
       ?>
+      <?php echo do_shortcode( '[custom_bogo]' ); ?>
     </nav>
 
-  <button class="site-nav-trigger hamburger hamburger--squeeze" type="button" onclick="window.location='#main-nav';" aria-label="Menu" aria-controls="navigation">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-
-
-    <!-- <a href="#main-nav" class="site-nav-trigger">
-      <span class="icon">
-        <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g style="fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"><path d="m3 5h18"/><path d="m3 12h18"/><path d="m3 19h18"/><path d="m3 5h18"/><path d="m3 12h18"/><path d="m3 19h18"/></g></svg>
+    <button class="site-nav-trigger hamburger hamburger--squeeze" type="button" onclick="window.location='#main-nav';" aria-label="Menu" aria-controls="navigation">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"><span class="hide"> <?php esc_html_e( 'Menu', 'macy' ); ?> </span></span>
       </span>
-      <span class="hide"> <?php esc_html_e( 'Menu', 'macy' ); ?> </span>
-    </a> -->
+    </button>
 
   </header>
