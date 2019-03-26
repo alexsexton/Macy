@@ -8,18 +8,26 @@ WordPress theme for `http://thecontentcat.com`.
 - Custom favicon
 - Responsive layout (based on two a column golden ratio grid)
 - Responsive navigation with animated toggle button
-- Custom page background images - using ACF.
+- Custom page background images - using ACF
 - Typography from Adobe Type, 'Brandon Grotesque' for body text and headings
 
 ## Installation
 
-Clone or download and then upload to your WordPress site as a `.zip` file
+Download and then upload to your WordPress site as a `.zip` file
 
-To riff on this theme and design, you'll find editable code in `assets`. Run `npm install` to get going. To build the assets once run `gulp` or to watch them run `gulp watch`.
+To riff on this theme and design:
+
+- Clone or download it
+- Run `npm install` to get going
+- Edit the `scss` and `js` found in the `assets` folder
+- Change the markup found in the root folder or `partials`
+- Build the assets once run `gulp`
+- To watch them run `gulp watch`
+- Don't blame me if something bricks you computer...I barely know what I'm doing
 
 ## Prerequisites
 
-Node, Gulp CLI and a virtual machine running WordPress (for local dev ovs).
+Node, Gulp CLI and a virtual machine running WordPress (for local dev obviously)
 
 ### Required Plugins
 
