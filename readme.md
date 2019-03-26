@@ -35,7 +35,7 @@ https://wordpress.org/plugins/bogo/
 Classic Editor
 https://wordpress.org/plugins/classic-editor/
 
-Past the code below into the form code section of contact form 7.
+Paste the code below into the form code section of contact form 7.
 
 ```
 <div class="form-group">
