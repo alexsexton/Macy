@@ -57,12 +57,11 @@ load_theme_textdomain( 'macy', get_template_directory() . '/languages' );
 // Add theme support
 add_theme_support( 'html5' );
 add_theme_support( 'title-tag' );
-//add_theme_support( 'automatic-feed-links' );
 
 // Custom Logo
 add_theme_support( 'custom-logo', array(
-  'height'      => 200,
-  'width'       => 400,
+  'height' => 200,
+  'width' => 400,
   'flex-height' => true,
   'flex-width'  => true,
   'header-text' => array( 'site-title', 'site-description' ),
@@ -74,20 +73,19 @@ function macy_remove_css_section( $wp_customize ) {
 }
 add_action( 'customize_register', 'macy_remove_css_section', 15 );
 
-// Simple function to remove the [...] from excerpt and replace with a 'Read more' link.
-function macy_excerpt_more($more) {
-  global $post;
-  return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'Read ', 'macy' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'read more', 'macy' ) .'</a>';
-}
-
-add_filter( 'excerpt_more', 'macy_excerpt_more' );
-
 // Custom excerpt length
 function macy_custom_excerpt_length( $length ) {
 	return 21;
 }
 add_filter( 'excerpt_length', 'macy_custom_excerpt_length', 999 );
 
+
+// Simple function to remove the [...] from excerpt and replace with a 'Read more' link.
+function macy_excerpt_more($more) {
+  global $post;
+  return '...  <a class="excerpt-read-more" href="'. get_permalink( $post->ID ) . '" title="'. __( 'read more', 'macy' ) . esc_attr( get_the_title( $post->ID ) ).'">'. __( 'read more', 'macy' ) .'</a>';
+}
+add_filter( 'excerpt_more', 'macy_excerpt_more' );
 
 // Disable tags - uncomment if needed
 
