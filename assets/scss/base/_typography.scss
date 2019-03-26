@@ -90,21 +90,28 @@ a:hover {
 
   blockquote {
     padding: 0 0 0 $spacer;
-    margin: 0 0 $spacer $margin;
+    margin: 0 0 $spacer 0;
     max-width: $measure;
     border-left: 3px solid $brand-secondary;
-
-    cite:before {
-      content: "\2014\00a0";
-    }
+    position: relative;
 
     cite {
+      font-size: $small-font-size;
       font-family: $font-family-serif;
+
+      &:before {
+        content: "\2014\00a0";
+      }
     }
   }
 
   figure {
-    margin: 0 0 $spacer 0;
+    margin: $spacer 0;
+  }
+
+  .alignleft, .alignright, .aligncenter, .alignnone {
+    margin: $spacer 0;
+    clear: both;
   }
 
   strong {

@@ -2,6 +2,7 @@
 $nav-link: $white;
 $nav-link-hover: $white;
 $nav-link-active: $white;
+$nav-background-colour: $dusty-blue;
 
 $sub-nav-link: $white;
 $sub-nav-link-hover: $white;
@@ -19,7 +20,7 @@ $sub-nav-link-hover: $white;
     color: $white;
     z-index: 10;
     padding: 0;
-    background: $dusty-blue;
+    background: $nav-background-colour;
     border-radius: 50%;
     height: 64px;
     width: 64px;
@@ -37,7 +38,7 @@ $sub-nav-link-hover: $white;
   left: 0;
   height: 100%;
   width: $c-cover;
-  background: $kitten-orange;
+  background: $nav-background-colour;
   transform: translateX(-100%);
   transition: transform $trans-time;
   transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
@@ -60,7 +61,7 @@ $sub-nav-link-hover: $white;
 
   .site-nav-trigger {
     @media screen and (max-width: $small-screen) {
-      background: $kitten-orange;
+      background: $nav-background-colour;
     }
   }
 

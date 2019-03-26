@@ -46,7 +46,7 @@ body {}
   width: $c-cover;
   height: 100vh;
   float: left;
-  background-color: $kitten-orange;
+  background-color: $dusty-blue;
   background-image: url('#{$imagePath}/home-page-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,4 +83,25 @@ body {}
     top: 66%;
     left: 18%;
   }
+}
+
+// WP Sizes
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+
+pre.d {
+ position: fixed;
+ top: 100%;
+ display: block;
+ z-index: 100;
+ padding: $spacer * 2;
+ background: #eee;
+ color: #222;
 }

@@ -61,9 +61,9 @@ $link-colour: $brand-secondary;
 $link-hover-colour: $bright-blue;
 
 // Buttons
-$button: $brand-secondary;
+$button: $brand-primary;
 $button-inactive: scale-color($button, $lightness: 25%);
-$button-hover: $brand-primary;
+$button-hover: $brand-secondary;
 
 // Tables
 $table-borders: $medium-grey;
