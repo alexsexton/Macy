@@ -5,6 +5,8 @@
     add_theme_support( 'post-thumbnails' );
     add_image_size( 'portfolio', 500, 300, array( 'center', 'top' ) );
     add_image_size( 'full-width', 1920, 1080, false );
+    add_image_size( 'page-image', 1024, 1365, array( 'center', 'top' ) );
+    add_image_size( 'page-image-preview', 768, 682, array( 'center', 'top' ) );
     add_image_size( 'open-graph-image', 1200, 1200, true );
     add_image_size( 'twitter-summary-card', 600, 600, true );
     add_image_size( 'twitter-summary-large-image-card', 1200, 675, true );
