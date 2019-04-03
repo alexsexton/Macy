@@ -3,3 +3,35 @@ img {
   width: 100%;
   height: auto;
 }
+
+div[id*='attachment'] {}
+
+img[class*='wp-image'] {}
+
+.wp-caption {}
+
+.wp-caption-text {}
+
+.alignleft, .alignright, .aligncenter, .alignnone {
+  margin: $spacer 0;
+  max-width: 100% !important; // HACK
+}
+
+.alignleft {
+  float: left;
+  margin: $spacer $spacer $spacer 0;
+}
+
+.alignright {
+  float: right;
+  margin: $spacer 0 $spacer $spacer;
+}
+
+.aligncenter {
+  margin: auto;
+  clear: both;
+}
+
+.alignnone {
+  clear: both;
+}

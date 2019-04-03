@@ -1,10 +1,10 @@
 /* global jQuery */
 
-if (jQuery) {
-  console.log('jQuery loaded')
-} else {
-  console.log('no jQuery')
-}
+// if (jQuery) {
+//   console.log('jQuery loaded')
+// } else {
+//   console.log('no jQuery')
+// }
 
 jQuery(document).ready(function ($) {
   $('html').addClass('js')
