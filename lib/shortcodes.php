@@ -1,8 +1,8 @@
 <?php
 // Custom bogo languages shortcode
-// TODO: Refactor this and use svg icons for the links, hide title / content but keep it accessible.
+// This is a rehash of the one built in to the plugin - prob quite hacky
 
-// check to see if the plugin is installed
+// Check to see if the plugin is installed
 if( function_exists( 'bogo_languages' ) ) {
 
   add_shortcode( 'custom_bogo', 'custom_bogo_language_switcher' );

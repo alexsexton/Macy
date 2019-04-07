@@ -24,7 +24,7 @@ function macy_setup() {
 	// Theme sidebars
 	require_once 'lib/sidebars.php';
 
-	// Theme shortcodes
+	// Theme custom shortcodes
 	require_once 'lib/shortcodes.php';
 
 	// Theme custom nav walker

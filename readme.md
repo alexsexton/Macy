@@ -1,6 +1,6 @@
 # Macy. A WordPress Theme
 
-WordPress theme for `http://thecontentcat.com`.
+WordPress theme for `http://thecontentcat.com`. 
 
 ## Features
 
@@ -20,8 +20,8 @@ To riff on this theme and design:
 - Clone or download it
 - Run `npm install` to get going
 - Edit the `scss` and `js` found in the `assets` folder
-- Change the markup found in the root folder or `partials`
-- Build the assets once run `gulp`
+- Change the markup found in the root folder and/or things found in `partials`
+- To build the assets once run `gulp`
 - To watch them run `gulp watch`
 - Don't blame me if something bricks you computer...I barely know what I'm doing
 
@@ -29,7 +29,7 @@ To riff on this theme and design:
 
 Node, Gulp CLI and a virtual machine running WordPress (for local dev obviously)
 
-### Required Plugins
+### Design to work with these Plugins
 
 Advanced Custom Fields
 https://wordpress.org/plugins/advanced-custom-fields/
@@ -69,7 +69,7 @@ There is one custom post type 'articles' which is the post type for portfolio co
 
 There are two custom page templates: `page-contact.php` and `page-work.php`.
 
-Contact (`page-contact.php`) is for the contact page, only difference between this and the default page is the background image and colour.
+Contact (`page-contact.php`) is for the contact page, only difference between this and the default page is the background image.
 
 Work (`page-work.php`) is for the portfolio page and pulls in posts from the 'articles' custom post type.
 
