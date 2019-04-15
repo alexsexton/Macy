@@ -1,9 +1,13 @@
 .custom-bogo-language-switcher {
   position: fixed;
   left: $spacer * 3;
-  bottom: $spacer * 1;
+  bottom: $spacer * 3;
   z-index: 5;
-  
+  @media screen and (max-width: $small-screen) {
+    color: $base-font-colour;
+    padding-bottom: $spacer * 1;
+  }
+
   li {
     height: 32px;
     width: 32px;
