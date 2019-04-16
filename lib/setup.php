@@ -2,7 +2,7 @@
 
 // Set production_env to true or false
 // If true query strings are stripped from JS and CSS asset files
-$production_env = false;
+$production_env = true;
 
 // Remove crap from wp_head
 remove_action( 'wp_head', 'wp_generator' );
