@@ -15,16 +15,17 @@
 @import "base/footer";
 @import "base/sidebar";
 
-@import "components/posts";
-@import "components/images";
-@import "components/tabs";
-@import "components/pagination";
-@import "components/tables";
-@import "components/blocks";
-@import "components/burgers";
 @import "components/article-list-item";
+@import "components/blocks";
+@import "components/boxes";
+@import "components/burgers";
 @import "components/contact-form";
+@import "components/images";
 @import "components/lang-switcher";
+@import "components/pagination";
+@import "components/posts";
+@import "components/tables";
+@import "components/tabs";
 
 @import "templates/home";
 @import "templates/page";

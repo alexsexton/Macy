@@ -1,14 +1,3 @@
 .cover-image {
   background-image: url('#{$imagePath}/home-page-background.jpg');
 }
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: $spacer;
-
-  .feature {
-    border: 1px solid $dusty-blue;
-    background: rgba($dusty-blue, 0.25);
-  }
-}

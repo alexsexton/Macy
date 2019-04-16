@@ -20,21 +20,6 @@
 
   </section>
   <?php endwhile; endif;?>
-
-  <section class="features">
-    <div class="feature">
-      <h2>Heading</h2>
-      <p>A quick summary of what I do.</p>
-    </div>
-    <div class="feature">
-      <h2>Heading</h2>
-      <p>A quick summary of what I do.</p>
-    </div>
-    <div class="feature">
-      <h2>Heading</h2>
-      <p>A quick summary of what I do.</p>
-    </div>
-  </section>
 </main>
 
 <?php get_footer() ?>
